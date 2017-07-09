@@ -45,7 +45,7 @@ util.Util = {
                    sap.ui.getCore().setModel(userModel, 'user');
                    sap.ui.getCore().getEventBus().publish('ontc.DocBrowser', 'loggedoutChecked', {});
         }).fail(function() {
-                   sap.m.MessageToast.show('Login error');
+                   sap.m.MessageToast.show('Logout error');
         });
     },
 

@@ -9,11 +9,11 @@ sap.ui.controller('view.Init', {
         var that = this;
         //util.Util.checkLogin();
 
-        sap.ui.getCore().getEventBus().subscribe('ontc.DocBrowser', 'loggedChecked',
-                        function(){
-                                that._router.navTo('home', {}, !sap.ui.Device.system.phone);
-                                                           
-                        }
+        sap.ui.getCore().getEventBus().subscribe('ontc.DocBrowser',
+                                                 'loggedChecked',
+                                                 function(){
+                                                   that._router.navTo('home', {}, !sap.ui.Device.system.phone);
+                                                 }
         );    
 	},
 

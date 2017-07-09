@@ -28,7 +28,7 @@ sap.ui.define([
 					{
 						pattern: '',
 						name: 'init',
-						target: ['initView', 'welcome']
+						target: ['initView']
 					},
 					{
 						pattern: 'home',
