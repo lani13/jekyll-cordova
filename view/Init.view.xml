@@ -1,0 +1,49 @@
+<mvc:View controllerName="view.Init"
+	xmlns="sap.m"
+	xmlns:l="sap.ui.layout"
+	xmlns:core="sap.ui.core"
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns:control="control"
+	xmlns:h="http://www.w3.org/1999/xhtml">
+	<Page
+		id="page"
+		title="{i18n>HOME_TITLE}"
+		showFooter="{device>/isNoPhone}" >
+		<headerContent>
+			<Button
+				visible="false"
+				icon="sap-icon://cart"
+				tooltip="{i18n>TO_CART_BUTTON_TOOLTIP}"
+				press="handleCartButtonPress">
+			</Button>
+		</headerContent>
+		<footer>
+			<Toolbar>
+			</Toolbar>
+		</footer>
+		<content>
+			<l:VerticalLayout width="100%" class="sapUiSmallMargin">
+			<Label text="Login" class="sapUiSmallMarginBottom"/>
+			<Input
+				id="loginInput"
+				type="Text"
+				width="90%"
+				class="sapUiSmallMarginBottom"
+				placeholder="Wpisz login" />
+			
+			<Label text="Hasło" class="sapUiSmallMarginBottom"/>
+			<Input
+				id="passInput"
+				type="Password"
+				width="90%"
+				class="sapUiSmallMarginBottom"
+				placeholder="Wpisz hasło" />
+				
+			<Button id="loginButton" text="Zaloguj" type="Accept" 
+					press="onLoginUser"
+					width="90%"
+					class=""/>
+			</l:VerticalLayout>
+		</content>
+	</Page>
+</mvc:View>

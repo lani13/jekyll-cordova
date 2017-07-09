@@ -1,0 +1,42 @@
+<mvc:View
+	controllerName="view.DocDetails"
+	xmlns="sap.m"
+	xmlns:core="sap.ui.core"
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns:control="control"
+	xmlns:h="http://www.w3.org/1999/xhtml">
+	<Page
+		id="documentDetails"
+		title="{attach>/name}"
+		enableScrolling="false" 
+	    showHeader="true"
+		showNavButton="{device>/isPhone}"
+		navButtonPress="onPressBack"
+		showFooter="true" >
+		<headerContent>
+		</headerContent>
+		<content>
+		  <Bar>
+		    <contentMiddle>
+			  <Label text="" class="sapUiSmallMarginBottom" />
+			</contentMiddle>
+			<contentRight>
+			  <!--<BusyIndicator id="busyIndicator" size="2em"/>
+			  <Button id="showDocButton" type="Accept" text="Pobierz" press="onDocPress" />-->
+			</contentRight>
+		  </Bar>
+		  <ScrollContainer
+		    id="scrollContainer"
+		    height="100%"
+		    width="100%"
+		    horizontal="false"
+		    vertical="true"
+		    focusable="true">
+	      </ScrollContainer>
+		</content>
+		<footer>
+			<Toolbar>
+			</Toolbar>
+		</footer>
+	</Page>
+</mvc:View>

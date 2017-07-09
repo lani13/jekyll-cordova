@@ -1,0 +1,50 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="ontc.docbrowser.app" 
+		version="0.0.1" 
+		xmlns="http://www.w3.org/ns/widgets" 
+		xmlns:cdv="http://cordova.apache.org/ns/1.0"
+		xmlns:gap="http://phonegap.com/ns/1.0"
+		xmlns:android="http://schemas.android.com/apk/res/android">
+    <name>Document Browser</name>
+    <description>
+        Mobile document browser
+    </description>
+    <author email="dev@ontc.pl" href="http://">
+        ONTC
+    </author>
+    <content src="index.html" />
+    <plugin name="cordova-plugin-whitelist" version="1" />
+    <access origin="*" />
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    <allow-intent href="tel:*" />
+    <allow-intent href="sms:*" />
+    <allow-intent href="mailto:*" />
+    <allow-intent href="geo:*" />
+    <platform name="android">
+        <allow-intent href="market:*" />
+    </platform>
+    <platform name="ios">
+        <allow-intent href="itms:*" />
+        <allow-intent href="itms-apps:*" />
+    </platform>
+	
+	<gap:plugin name="io.github.pwlin.cordova.plugins.fileopener2" version="1.0.11" />
+	
+	<preference name="target-device" value="universal" /> 
+	<preference name="AndroidPersistentFileLocation" value="Compatibility" />
+	<preference name="android-minSdkVersion" value="15" />
+	<preference name="permissions" value="none"/>
+
+    <!--  
+    <feature name="http://api.phonegap.com/1.0/battery"/>
+    <feature name="http://api.phonegap.com/1.0/camera"/>
+    <feature name="http://api.phonegap.com/1.0/contacts"/> -->
+    <feature name="http://api.phonegap.com/1.0/file"/>
+    <feature name="http://api.phonegap.com/1.0/network"/>
+	<!-- <feature name="http://api.phonegap.com/1.0/geolocation"/>
+    <feature name="http://api.phonegap.com/1.0/media"/>
+    <feature name="http://api.phonegap.com/1.0/notification"/>-->
+
+		
+</widget>
